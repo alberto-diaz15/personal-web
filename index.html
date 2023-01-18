@@ -3,7 +3,7 @@
 <head
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web de Alberto Díaz Martín</title>
-    <link rel="icon" type="image/x-icon" href="/img/user.svg">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,28 +11,30 @@
 <body>
 
     <header class="cabecera">
+        <nav class="nav__cabecera">
+        <div class="container nav__container">
+            <div class="logo">
+                <h2 class="logo__name">Alberto Díaz Martín</h2>
+            </div>
+            <div class="links">
+                <a href="index.html" class="link">Inicio</a>
+                <a href="#sobre-mi" class="link">Sobre mí</a>
+                <a href="#habilidades" class="link">Habilidades</a>
+                <a href="#proyectos" class="link">Portfolio</a>
+                <a href="#contacto" class="link link--active">Contacto</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    
         <div class="hero">
             <div class="hero__content">
-                <nav class="nav__cabecera">
-                    <div class="container nav__container">
-                        <div class="logo">
-                            <h2 class="logo__name">Alberto Díaz Martín</h2>
-                        </div>
-                        <div class="links">
-                            <a href="index.html" class="link">Inicio</a>
-                            <a href="#sobre-mi" class="link">Sobre mí</a>
-                            <a href="#habilidades" class="link">Habilidades</a>
-                            <a href="#proyectos" class="link">Portfolio</a>
-                            <a href="#contacto" class="link link--active">Contacto</a>
-                        </div>
-                    </div>
-                </nav>
- 
                     <div class="cabecera__textos">
                         <img src="img/profile-icon.png" id="personal_icon">
                         <h1 class="title">Alberto Díaz Martín</h1> 
                         <p class="sub_title">Ingeniero Técnico Informático </p>
-                        <a href="img\cv-Alberto_Díaz_Martín.pdf" download target="_blank" style="text-decoration: none;">
+                        <a href="img\cv-Alberto_Díaz_Martín.pdf" download target="_blank" style="text-decoration:none; display:contents; width:fit-content;">
                         <button class="button">
                             <span class="default">Descarga mi currículum &nbsp;<i class="fa fa-download"></i></span>
                             <span class="success">Gracias</span>
@@ -89,7 +91,7 @@
                 </svg>
             </div>
         </div>
-    </header>
+ 
 
     <main>
         <a href="#" class="boton-subir">
