@@ -41,13 +41,12 @@ li{
 }
 .cabecera{
     width: 100%;
-    background: rgb(21, 21, 67);
+    background: #15172b;
 }
 
 .nav__cabecera{
     color: #fff;
     height: 70px;
-    border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
 .nav__container{
