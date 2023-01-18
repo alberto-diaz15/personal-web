@@ -121,7 +121,7 @@ li{
     position:relative;
     text-decoration:none;
     display:inline-block;
-    padding:15px 20px;
+    padding:10px 20px;
     color: inherit;
     font-weight: 400;
 }
@@ -134,6 +134,12 @@ li{
 .link:hover{
     color: #85b5fd;
     font-weight: 450;
+}
+
+.link--active:hover{
+    font-weight: 700;
+    color: #4394e4;
+
 }
 
 .link:hover:after{
@@ -157,7 +163,10 @@ li{
 
 
 .cabecera__textos{
-    margin-top: 3%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .cta{
