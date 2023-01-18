@@ -115,21 +115,45 @@ li{
     font-size: 24px;
 }
 
+
+
 .link{
-    display: inline-block;
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+    padding:15px 20px;
     color: inherit;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 10px;
+    font-weight: 400;
 }
 
 .link--active{
     color: #90f7aa;
     font-weight: 700;
 }
+
 .link:hover{
     color: #85b5fd;
+    font-weight: 450;
 }
+
+.link:hover:after{
+    width:100%;
+    left:0;
+}
+    
+.link:after{
+    bottom:0;
+    content:"";
+    display:block;
+    height:2px;
+    left:50%;
+    position:absolute;
+    background:rgb(14, 203, 178);
+    transition:width .3s ease 0s,left .3s ease 0s;
+    width:0
+}
+
+
 
 
 .cabecera__textos{
@@ -1223,6 +1247,8 @@ li{
 #email-icon{
     transform: scale(0.65) translate(210px, 210px);
 }
+
+
 
 
 @media screen and (max-width:900px){
