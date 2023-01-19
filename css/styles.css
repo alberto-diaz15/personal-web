@@ -174,10 +174,12 @@ li{
     padding: 20px 30px;
     max-width: fit-content;
     display: block;
-    margin: auto;
     margin-bottom: 40px;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     font-weight: 700;
+    color: #13543b;
+    text-decoration: none;
+    border-radius: 7px;
     box-shadow: var(--shadow) var(--color_shadow);
 }
 .cta:hover{
@@ -190,7 +192,7 @@ li{
     --primary: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     --primary-dark: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
     --primary-darkest: linear-gradient(180deg, #66ad64 0%, #3f856a 100%);;
-    --text: #202020;
+    --text: #13543b;
     --text-opacity: 1;
     --success: #ebebeb;
     --success-scale: 0.2;
@@ -929,7 +931,7 @@ li{
     border-radius: 6px;
     text-decoration: none;
     width: 100%;
-    color: var(--black1);
+    color: #232141;
     font-weight: 700;
     text-align: center;
     padding: 12px 0;
@@ -946,164 +948,13 @@ li{
 }
 
 
-.cc_img{
-    margin-top: 10px;
+.contact__links{
+    margin: 10px;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.logo_linkedin{
-    margin-left: 100px;
-    margin-right: 90px;
-    max-height: 120px;
-    -webkit-transition: all .9s ease;
-    display: inline-block;
-}
-.logo_linkedin:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-.logo_github{
-    margin-left: 100px;
-    margin-right: 90px;
-    max-height: 120px;
-    -webkit-transition: all .9s ease;
-    display: inline-block;
-}
-.logo_github:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-.logo_email{
-    margin-left: 100px;
-    margin-right: 90px;
-    max-height: 120px;
-    -webkit-transition: all .9s ease;
-    display: inline-block;
-}
-.logo_email:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-.tt {
-    position: relative;
-    list-style-type: none;
-}
-  .tt:before,
-  .tt:after {
-    z-index:1;
-    display: block;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 20px
-  }
-  .tt:after {
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid rgba(0,0,0,.75); 
-    border-left: 6px solid transparent;
-    content: '';
-    height: 0;
-      top: 20px;
-      left: 20px;
-    width: 0;
-  }
-  .tt:before {
-    background: rgba(0,0,0,.75);
-    border-radius: 2px;
-    color: #fff;
-    content: attr(data-title);
-    font-size: 14px;
-    padding: 6px 10px;
-      top: 26px;
-    white-space: nowrap;
-  }
-  
-  /* expand */
-  .tt.expand:before {
-    transform: scale3d(.2,.2,1);
-    transition: all .2s ease-in-out;
-  }
-  .tt.expand:after {
-    transform: translate3d(0,6px,0);
-    transition: all .1s ease-in-out;
-  }
-  .tt.expand:hover:before,
-  .tt.expand:hover:after {
-    opacity: 1;
-    transform: scale3d(1,1,1);
-  }
-  .tt.expand:hover:after {
-    transition: all .2s .1s ease-in-out;
-  }
-  .tt.expand::marker {
-    visibility: hidden;
-  }
-
-  .ttm {
-    position: relative;
-    align-items: center;
-    list-style-type: none;
-  }
-  .ttm:before,
-  .ttm:after {
-    z-index:1;
-    display: block;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    margin-left: 130px;
-    margin-top: 20px
-  }
-  .ttm:after {
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid rgba(0,0,0,.75); 
-    border-left: 6px solid transparent;
-    content: '';
-    height: 0;
-      top: 20px;
-      left: 20px;
-    width: 0;
-  }
-  .ttm:before {
-    background: rgba(0,0,0,.75);
-    border-radius: 2px;
-    color: #fff;
-    content: attr(data-title);
-    font-size: 14px;
-    padding: 6px 10px;
-      top: 26px;
-    white-space: nowrap;
-  }
-  
-  /* expand */
-  .ttm.expand:before {
-    transform: scale3d(.2,.2,1);
-    transition: all .2s ease-in-out;
-  }
-  .ttm.expand:after {
-    transform: translate3d(0,6px,0);
-    transition: all .1s ease-in-out;
-  }
-  .ttm.expand:hover:before,
-  .ttm.expand:hover:after {
-    opacity: 1;
-    transform: scale3d(1,1,1);
-  }
-  .ttm.expand:hover:after {
-    transition: all .2s .1s ease-in-out;
-  }
-  .ttm.expand::marker {
-    visibility: hidden;
-  }
-
-
 
 .subtitle{
     font-size: 42px;
@@ -1169,12 +1020,11 @@ li{
 .contact{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
     color: #fff;
 }
 
 .item__contact{
-    width: 33.33%;
+    width: 66.67%;
     padding: 30px 0;
     text-align: center;
     background-color:rgb(35, 33, 65);
@@ -1182,6 +1032,7 @@ li{
 }
 
 .item__contact--gold{
+    width: 33.33%;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     color: var(--black1);
 }
@@ -1209,17 +1060,15 @@ li{
     color: #2d76b0;
 }
 .social-link--github {
-    color: #000;
+    color: #495599
 }
-.social-link--instagram {
-    color: #9a2970;
-}
-.social-link--dribbble {
-    color: #b53561;
+
+.social-link--email {
+    color: #636363;
 }
 .social-link .social-svg {
-    width: 7rem;
-    height: 7rem;
+    width: 8.5rem;
+    height: 8.5rem;
 }
 .social-link .social-svg .social-group__icon {
     fill: #191308;
@@ -1429,9 +1278,9 @@ li{
 }
 
 .flecha-arriba{
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     position: fixed;
-    bottom: 20px;
-    right: 5px;
+    bottom: 30px;
+    right: 30px;
 }
