@@ -171,13 +171,14 @@ li{
 }
 
 .cta{
+    color-scheme: light only;
     padding: 20px 30px;
     max-width: fit-content;
     display: block;
     margin-bottom: 40px;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     font-weight: 700;
-    color: #13543b;
+    color: #232141;
     text-decoration: none;
     border-radius: 7px;
     box-shadow: var(--shadow) var(--color_shadow);
@@ -189,6 +190,7 @@ li{
 
 
 .button {
+    color-scheme: light only;
     --primary: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     --primary-dark: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
     --primary-darkest: linear-gradient(180deg, #66ad64 0%, #3f856a 100%);;
@@ -346,6 +348,7 @@ li{
 }
 
 .logo_esi{
+    color-scheme: light only;
     margin: 5px;
     height: 150px;
 }
@@ -357,6 +360,7 @@ li{
 }
 
 .logo_uclm{
+    color-scheme: light only;
     margin: 5px;
     margin-top: 15px;
     height: 150px;
@@ -926,6 +930,7 @@ li{
 }
 
 .card__button{
+    color-scheme: light only;
     display: block;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
     border-radius: 6px;
