@@ -9,25 +9,23 @@
 </head>
 
 <body>
-    <header class="cabecera">
-        <nav class="nav__cabecera">
-        <div class="container nav__container">
-            <div class="logo">
-                <h2 class="logo__name">Alberto Díaz Martín</h2>
-            </div>
-            <div class="links">
-                <a href="#sobre-mi" class="link">Sobre mí</a>
-                <a href="#habilidades" class="link">Habilidades</a>
-                <a href="#proyectos" class="link">Portfolio</a>
-                <a href="#contacto" class="link link--active">Contacto</a>
-            </div>
-        </div>
-        </nav>
-    </header>
+
 
     
         <div class="hero">
             <div class="hero__content">
+
+                <header class="cabecera">
+                    <div class="logo">
+                        <h2 class="logo__name">Alberto Díaz Martín</h2>
+                    </div>
+                    <div class="links">
+                        <a href="#sobre-mi" class="link">Sobre mí</a>
+                        <a href="#habilidades" class="link">Habilidades</a>
+                        <a href="#proyectos" class="link">Portfolio</a>
+                        <a href="#contacto" class="link link--active">Contacto</a>
+                    </div>
+                </header>
                     <div class="cabecera__textos">
                         <img src="img/profile-icon.png" id="personal_icon">
                         <h1 class="title">Alberto Díaz Martín</h1> 
@@ -42,8 +40,9 @@
                         </a>
                     </div>
             </div>
+
             <div class="snow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 2050" preserveAspectRatio="xMidYMax slice">
                     <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
                        <g id="snow-bottom-layer">
                           <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
@@ -99,20 +98,24 @@
         <section class="sobre-mi" id="sobre-mi">
             <div class="container">
                 <h2 class="subtitle">Sobre mí</h2>
-                <p class="copy__section">Actualmente tengo 21 años y soy estudiante de Ingeniería Informática por la Universidad de Castilla-La Mancha en su campus de Ciudad Real, especializado en Tecnologías de la Información.
-                    Me considero un chico con inciativa, respetuoso y al que le gusta trabajar en equipo.</p>
-                    <div class="sm_img">
-                        <a href="https://www.esi.uclm.es" target="_blank">
-                            <li class="tooltip expand" data-title="Ir a www.esi.uclm.es">
-                                <img src="img/esi.svg" class="logo_esi">
-                            </li>
-                        </a>
-                        <a href="https://www.uclm.es" target="_blank">
-                            <li class="tooltip expand" data-title="Ir a www.uclm.es"> 
-                                <img src="img/uclm.svg" class="logo_uclm">
-                            </li>
-                        </a>
-                    </div>
+                <p class="copy__section">Actualmente tengo 22 años y estoy graduado en Ingeniería Informática
+                    por la Universidad de Castilla-La Mancha en su campus de Ciudad Real desde diciembre de 2022, especializado en Tecnologías de la Información.
+                <p class="copy__section">Mi principal interés es el diseño de interfaces de usuario, así como cumplir con los estándares de accesibilidad y usabilidad
+                    para que puedan ser utilizadas por todo el mundo.</p>
+                <p class="copy__section">Me considero un chico con inciativa, responsable y al que le gusta trabajar en equipo.</p>
+                    
+                <div class="sm_img">
+                    <a href="https://www.esi.uclm.es" target="_blank">
+                        <li class="tooltip expand" data-title="Ir a www.esi.uclm.es">
+                            <img src="img/esi.svg" class="logo_esi">
+                        </li>
+                    </a>
+                    <a href="https://www.uclm.es" target="_blank">
+                        <li class="tooltip expand" data-title="Ir a www.uclm.es">
+                            <img src="img/uclm.svg" class="logo_uclm">
+                        </li>
+                    </a>
+                </div>
             </div>
 
         </section>
@@ -121,39 +124,48 @@
             <div class="container">
                 <h2 class="subtitle">Habilidades</h2>
                 <h3 class="h_tec">Técnicas</h3>
-                    <p class="copy__section"> Dentro de mi formación académica, considero tener la siguiente destreza en cada uno de los campos de desarrollo:</p>
+                    <p class="copy__section"> Dentro de mi formación académica, considero tener la siguiente destreza en cada uno de estos campos de desarrollo:</p>
                     <div class="skillcard">                       
-                        <p>Java</p>
+                        <p>Apps Android en Java</p>
+                        <div class="skill_container">
+                          <div class="skills android"></div>
+                        </div>
+                        
+                        <p>Programación Java</p>
                         <div class="skill_container">
                           <div class="skills java"></div>
                         </div>
-                        
-                        <p >C#</p>
-                        <div class="skill_container">
-                          <div class="skills cs"></div>
-                        </div>
-                        
-                        <p>Web</p>
+
+                        <p>Desarrollo Web</p>
                         <div class="skill_container">
                           <div class="skills web"></div>
                         </div>
                         
-                        <p>Python</p>
+                        <p >Apps para Windows en C#</p>
                         <div class="skill_container">
-                          <div class="skills python"></div>
+                          <div class="skills cs"></div>
                         </div>
-                        <div class="credit">Made with &#10084; by Learning Robo</div>
                     </div>
+
                     <p class="copy__section"> Además, he recibido formación complementaria en las siguientes plataformas:
-                        <li>Modelado de clases con diferentes lenguajes (UML, Casos de Uso, CTT)</li>
-                        <li>Modelado de procesos BPMN (curso Mi Primer Proceso de Bizagi)</li>
-                        <li>Tareas TCP/IP Attack, Secret-Key Encription y Linux Firewall Exploration del programa SEED</li>
-                        <li>Diseño y configuración de redes con Packet Tracer</li>
-                        <li>Desarrollo de apps Android con Android Studio</li>
-                        <li>Prácticas orientadas a las matemáticas con Maxima y R Studio</li>
+                        <li>Diseño de diagramas para desarrollo de software (Clases, Casos de Uso, CTT, navegación, etc.)</li>
+                        <li>Gestión y personalización de plataformas e-commerce con Prestashop </li>
+                        <li>Aplicaciones web con Ruby On Rails </li>
+                        <li>Diseño de bocetos o mockups con Balsamiq </li>
+                        <li>Modelado de procesos BPMN (curso "Mi Primer Proceso" de Bizagi)</li>
+                        <li>Tratamiento de archivos formateados (XML, JSON)</li>
                     </p>
+                    <br>
+                    <p class="copy__section"> Y otras en menor medida como:
+                        <li>Gestión de Bases de Datos (SQL y Firebase)</li>
+                        <li>Diseño y configuración de redes con Packet Tracer</li>
+                        <li>Programación de sistemas distribuidos en Python</li>
+                        <li>Prácticas orientadas a las matemáticas y estadística con Maxima y R Studio</li>
+                    </p>
+
                 <h3 class="h_notec">No técnicas</h3>
-                    <p class="copy__section">Me considero una persona activa y trabajadora, que no tiene problema a la hora de asumir responsabilidades y trabajar en equipo, ayudando a mis compañeros cuando lo necesiten. Dispongo de nivel B2 en inglés y permiso de conducir tipo B.</p>
+                    <p class="copy__section">Me considero una persona activa y trabajadora, que no tiene problema a la hora de asumir responsabilidades
+                        y trabajar en equipo. Dispongo de nivel B2 en inglés por Cambridge y permiso de conduccción tipo B.</p>
             </div>  
         </section>
 
@@ -198,7 +210,7 @@
                         </div>
                         <div class="cards__text">
                             <p class="card__list">Java, Swing</p>
-                            <h3 class="card__title">Acampa2</h3>
+                            <h4 class="card__title">Acampa2</h4>
                             <p class="card__copy">Simulación de sistema de gestión de un camping</p>
                             <a href="https://github.com/adiazm00/Acampa2" target="_blank" class="card__button">Acceso al código fuente</a>
                         </div>
@@ -286,7 +298,8 @@
                             <a href="https://github.com/adiazm00/CRM-example" target="_blank" class="card__button">Acceso al código fuente</a>
                         </div>
                     </div>
-                    <a href="https://github.com/adiazm00" target="_blank" class="cta">Ver todo ></a>
+                    <div class="card" id="card-cta"><a href="https://github.com/adiazm00" target="_blank" class="cta">Ver todo ></a></div>
+                        
                     </div>
                 </article>
             </div>
@@ -298,7 +311,6 @@
                 <p class="copy__section">Siéntete libre de contactar conmigo a través de los siguientes enlaces:</p>
             
                 <div class="contact__links">
-                    <div class="wrapper">
                         <a class="social-link social-link--github" id="github" href="https://github.com/adiazm00" target="_blank">
                             <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                             <title>
@@ -338,10 +350,7 @@
                               </g>
 
                             </svg>
-                        </a>
-
-                    </div>
-                      
+                        </a>                      
                 </div>
             
             </div>

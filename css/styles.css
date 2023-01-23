@@ -33,40 +33,28 @@ li{
 }
 
 
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 .cabecera{
     width: 100%;
-    background: #15172b;
-}
-
-.nav__cabecera{
     color: #fff;
     height: 70px;
-}
-
-.nav__container{
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: inherit;
-    padding: 0;
+    padding: 20px 50px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 
 .hero {
 	background-image: linear-gradient(180deg, #15172b 0%, #0d4146 100%);
-	height: calc(100vh - 70px);
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	align-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero__content{
@@ -77,18 +65,18 @@ li{
 .snow {
     z-index: 2;
 	position: absolute;
-	min-width: 100vw;
-	min-height: 100vh;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	top: 0;
 	left: 0;
 }
 
-.snow .svg {
+.svg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+    min-width: 100vw;
+	min-height: 100vh;
 }
 
 #snow-top-layer {
@@ -114,13 +102,21 @@ li{
     font-size: 24px;
 }
 
-
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 
 .link{
     position:relative;
     text-decoration:none;
     display:inline-block;
-    padding:10px 20px;
+    padding:10px 16px;
     color: inherit;
     font-weight: 400;
 }
@@ -182,10 +178,10 @@ li{
     text-decoration: none;
     border-radius: 7px;
     box-shadow: var(--shadow) var(--color_shadow);
+    transition: all 0.3s ease 0s;
 }
 .cta:hover{
-    transition: all 0.2s linear 0s;
-    background: linear-gradient(180deg, #90f7d0 0%, #76d0f4 100%);
+    background: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
 }
 
 
@@ -232,14 +228,9 @@ li{
     --right-body-second-y: 100;
     --right-body-third-x: 100;
     --right-body-third-y: 100;
-    display: block;
     cursor: pointer;
-    position: relative;
     border: 0;
     padding: 20px 30px;
-    min-width: 100px;
-    text-align: center;
-    margin: auto;
     line-height: 24px;
     font-family: inherit;
     font-weight: 700;
@@ -330,6 +321,7 @@ li{
     opacity: var(--success-opacity);
     color: var(--success);
 }
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -396,6 +388,7 @@ li{
       left: 20px;
     width: 0;
   }
+
   .tooltip:before {
     background: rgba(0,0,0,.75);
     border-radius: 2px;
@@ -431,30 +424,27 @@ li{
   * {box-sizing: border-box}
 
   .skillcard{
-    position: relative;
     width: 90%;
     margin:30px auto;
-    background-color:rgb(35, 33, 65);
-    padding-top: 10px;
-    height: auto;
+    background-color:#232141;
+    padding: 20px 0;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .skillcard > p{
-      margin-left: 20px;
+      margin: auto;
       color:#eef5f2;
       font-weight: 900;
       font-size: 20px;
-      width:150px;
+      width:92%;
       padding: 5px;
       padding-bottom: 0px;
    }
 
   .skill_container {
-    margin:20px;
-    margin-top: 10px;
-    width: 90%;
+    margin:auto;
+    width: 92%;
     background-color: rgb(223, 223, 223);
     border-radius: 30px;
   }
@@ -469,35 +459,30 @@ li{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+  .android {
+    width: 85%;
+    height: 20px;
+    background: linear-gradient(180deg, #7feb65 0%, #61cfcf 100%);   
+}
+
   .java {
       width: 75%;
       height: 20px;
-      background: linear-gradient(180deg, #7feb65 0%, #61cfcf 100%);   
+      background: linear-gradient(180deg, #fab636 0%, #f44336 100%);  
   }
 
-  .cs {
-      width: 65%;
-      height: 20px;
-      background: linear-gradient(180deg, #9092f7 0%, #2196F3 100%);
-     
-  }
   .web {
       width: 65%;
       height: 20px; 
-      background: linear-gradient(180deg, #d824c9 0%, #8831eb 100%);
-       
+      background: linear-gradient(180deg, #d824c9 0%, #8831eb 100%);     
   }
-  .python {
-      width: 45%;
-      height: 20px;
-      background: linear-gradient(180deg, #fab636 0%, #f44336 100%);
-      
-  }
-  .credit{
-      visibility: hidden;
-      text-align: center;
-      font-size: 10px;
-  }
+
+  .cs {
+    width: 65%;
+    height: 20px;
+    background: linear-gradient(180deg, #9092f7 0%, #2196F3 100%);
+   
+}
 
 .sm_img{
     margin-top: 10px;
@@ -531,18 +516,18 @@ li{
 }
 
 
-.sobre-mi{
-    background: #f3f3f3;
+.habilidades{
+    background: #f0f0f0;
 }
 
-.proyectos{
-    background: #f3f3f3;
+.contacto{
+    background: #f0f0f0;
 }
 
 .container-cards{
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -884,10 +869,10 @@ li{
 .card{
     width: 30%;
     max-width: 320px;
-    height: 482px;
+    height: 460px;
     padding: 30px 0;
     overflow: hidden;
-    background-color:rgb(35, 33, 65);
+    background-color:#232141;
     border-radius: 10px;
     position: relative;
     text-align: right;
@@ -913,13 +898,13 @@ li{
 .card__list{
     color: #76f4c4 ;
     font-weight: 700;
-    margin: 25px 0 12px ;
+    margin: 20px 0 10px ;
     font-size: 18px;
 }
 
 
 .card__title{
-    font-size: 40px;
+    font-size: 36px;
     color: #fff;
     margin-bottom: 8px;
 }
@@ -942,7 +927,7 @@ li{
     padding: 12px 0;
 }
 .card__button:hover{
-    background: linear-gradient(180deg, #90f7d0 0%, #76d0f4 100%);
+    background: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
 }
 
 .card__date{
@@ -955,10 +940,8 @@ li{
 
 .contact__links{
     margin: 10px;
-    flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .subtitle{
@@ -1032,7 +1015,7 @@ li{
     width: 66.67%;
     padding: 30px 0;
     text-align: center;
-    background-color:rgb(35, 33, 65);
+    background-color:#232141;
 
 }
 
@@ -1048,19 +1031,7 @@ li{
     text-decoration: none;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    transition: all 0.4s ease-out;
-}
-.wrapper__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-}
+
 .social-link--linkedin {
     color: #2d76b0;
 }
@@ -1098,9 +1069,7 @@ li{
     fill: currentColor;
     transition: all 0.45s;
 }
-.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
-    fill: url(#simpleInsta) !important;
-}
+
 .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
     stroke: currentColor;
     transform: scale(1.1);
@@ -1111,50 +1080,46 @@ li{
     transform: scale(0.65) translate(210px, 210px);
 }
 
+#card-cta{
+    background: transparent;
+    display: flex;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    padding: 0px;
+    margin-bottom: 0px;
+    }
 
 
 
 @media screen and (max-width:900px){
 
-    .logo_esi:hover{
-        top: -50px;
-        left: -25px;
-        max-width: 400px;
-    }
-    
-    .logo_uclm:hover{
-        top: -50px;
-        left: -25px;
-        max-width: 500px;
-    }
-
-    .sm_img{
-        display: unset;
-    }
-
-    .title{
-        font-size: 50px;
-    }
-
     .container-cards{
-        justify-content: space-evenly;
-    }
-
-    .sobre-mi .card{
-        width: 45%;
-    }
-
-    .background{
-        width: 52%;
+        justify-content: space-around;
     }
 
     .card{
         width: 42%;
     }
 
+    #card-cta{
+    background: transparent;
+    display: flex;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    }
+
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:774px){
+
+    #card-cta{
+        max-height: 100px;
+        padding: 0px;
+        margin-bottom: 0px;        
+    }
 
     .ttm:before,
     .ttm:after {
@@ -1173,8 +1138,7 @@ li{
       margin-top: 20px
     }
 
-    main .container,
-    footer .container{
+    main{
         padding: 20px 0;
     }
 
@@ -1182,18 +1146,15 @@ li{
         max-width: 455px;
     }
 
-    .nav__container{
+    .cabecera{
+        height: auto;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
-    .nav__cabecera{
-        height: auto;
-    }
-
     .logo{
-        padding: 15px 0 ;
+        padding-bottom: 15px;
         text-align: center;
     }
 
@@ -1232,10 +1193,6 @@ li{
     .copy__section{
         font-size: 20px;
         text-align: justify;
-    }
-
-    .sobre-mi .card{
-        width: 80%;
     }
 
     .container-bg{
@@ -1288,4 +1245,5 @@ li{
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 1;
 }
