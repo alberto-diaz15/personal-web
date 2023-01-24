@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-:root{
-    --gray:#ffffff80;
-    --gray2:#f7d9d990;
-    --black1: #1A1B1F;
-    --black2: #30353B;
-    --shadow: 0 8px 8px;
-    --color_shadow: #00000033;
-}
-
 *{
     margin: 0;
     padding:0;
@@ -33,20 +24,6 @@ li{
 }
 
 
-.cabecera{
-    width: 100%;
-    color: #fff;
-    height: 70px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
 .hero {
 	background-image: linear-gradient(180deg, #15172b 0%, #0d4146 100%);
 	height: 100vh;
@@ -62,54 +39,16 @@ li{
     z-index: 3;
 }
 
-.snow {
-    z-index: 2;
-	position: absolute;
-	height: 100vh;
-	width: 100%;
-	top: 0;
-	left: 0;
+.cabecera{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    overflow: hidden;
 }
-
-.svg {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-    min-width: 100vw;
-	min-height: 100vh;
-}
-
-#snow-top-layer {
-	will-change: transform;
-	transform: translateY(-768px);
-	animation: fall 22.5s infinite linear;
-}
-
-#snow-bottom-layer {
-	will-change: transform;
-	transform: translateY(-768px);
-	animation: fall 45s infinite linear;
-}
-
-@keyframes fall {
-	100% {
-		transform: translateY(0);
-	}
-}
-
 
 .logo__name{
     font-size: 24px;
-}
-
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: justify;
-    padding-top: 10px;
-    padding-bottom: 20px;
 }
 
 .link{
@@ -118,7 +57,6 @@ li{
     display:inline-block;
     padding:10px 16px;
     color: inherit;
-    font-weight: 400;
 }
 
 .link--active{
@@ -154,36 +92,57 @@ li{
     width:0
 }
 
-
 .cabecera__textos{
-    margin: auto;
     display: grid;
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     justify-items: center;
-    justify-content: center;
 }
 
-.cta{
-    color-scheme: light only;
-    padding: 20px 30px;
-    max-width: fit-content;
-    display: block;
+#personal_icon{
+    max-height: 250px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.sub_title{
+    font-size: 24px;
+    color: #ffffff80;
+    text-shadow: 0 8px 8px  #00000033;
+    margin: 15px;
     margin-bottom: 40px;
-    background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
-    font-weight: 700;
-    color: #232141;
-    text-decoration: none;
-    border-radius: 7px;
-    box-shadow: var(--shadow) var(--color_shadow);
-    transition: all 0.3s ease 0s;
-}
-.cta:hover{
-    background: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
 }
 
+.snow {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	100% {
+		transform: translateY(0);
+	}
+}
 
 .button {
     color-scheme: light only;
@@ -243,6 +202,7 @@ li{
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 .button:hover{
     --left-wing-background: var(--primary-dark);
     --left-body-background: var(--primary-dark);
@@ -332,12 +292,75 @@ li{
 }
 
 
-#personal_icon{
-    max-height: 250px;
-    display: block;
-    margin: auto;
+.flecha-arriba{
+    height: 55px;
+    width: 55px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 42px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.copy__section{
+    color: #30353B;
+    font-size: 22px;
+    line-height: 32px;
     margin-bottom: 20px;
 }
+
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.sm_img{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.cta{
+    color-scheme: light only;
+    padding: 20px 30px;
+    max-width: fit-content;
+    display: block;
+    margin-bottom: 40px;
+    background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
+    font-weight: 700;
+    color: #232141;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 0 8px 8px #00000033;
+    transition: all 0.3s ease 0s;
+}
+.cta:hover{
+    background: linear-gradient(180deg, #78ca75 0%, #5bbf99 100%);
+}
+
+
+
+
 
 .logo_esi{
     color-scheme: light only;
@@ -484,32 +507,13 @@ li{
    
 }
 
-.sm_img{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+
 
 .h_notec{
     margin-top: 30px;
 }
 
-.title{
-    font-size: 56px;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-}
 
-.sub_title{
-    font-size: 24px;
-    color: var(--gray);
-    text-shadow: var(--shadow)  var(--color_shadow);
-    margin: 15px;
-    margin-bottom: 40px;
-    text-align: center;
-}
 
 .copy__active{
     font-weight: 700;
@@ -879,7 +883,7 @@ li{
     margin-bottom: 30px;
     margin-right: 5px;
     margin-left: 5px;
-    box-shadow: 0 0 6px var(--color_shadow);
+    box-shadow: 0 0 6px #00000033;
 }
 
 .card__img{
@@ -910,7 +914,7 @@ li{
 }
 
 .card__copy{
-    color: var(--gray2);
+    color: #f7d9d990;
     margin-bottom: 16px;
 }
 
@@ -944,29 +948,6 @@ li{
     justify-content: space-evenly;
 }
 
-.subtitle{
-    font-size: 42px;
-    text-align: center;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.subtitle--modifier{
-    text-align: justify;
-    margin-bottom: 100px;
-}
-
-.copy__section{
-    color: var(--black2);
-    font-size: 22px;
-    line-height: 32px;
-    margin-bottom: 20px;
-}
-
-.copy__section--modifier{
-    text-align: center;
-    margin-bottom: 32px;
-}
 
 
 .container-bg{
@@ -1006,9 +987,11 @@ li{
 }
 
 .contact{
-    display: flex;
     width: 100%;
     color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    background-color:#232141;
 }
 
 .item__contact{
@@ -1016,13 +999,12 @@ li{
     padding: 30px 0;
     text-align: center;
     background-color:#232141;
-
 }
 
 .item__contact--gold{
     width: 33.33%;
     background: linear-gradient(180deg, #93f790 0%, #76f4c4 100%);
-    color: var(--black1);
+    color: #1A1B1F;
 }
 
 .contact__title{
@@ -1093,7 +1075,7 @@ li{
 
 
 
-@media screen and (max-width:900px){
+@media only screen and (max-width:900px){
 
     .container-cards{
         justify-content: space-around;
@@ -1113,7 +1095,7 @@ li{
 
 }
 
-@media screen and (max-width:774px){
+@media only screen and (max-width:774px){
 
     #card-cta{
         max-height: 100px;
@@ -1239,11 +1221,3 @@ li{
     }
 }
 
-.flecha-arriba{
-    height: 55px;
-    width: 55px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1;
-}
